@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderation Commands</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="avatar">
+            <img src="your-bot-avatar.gif" alt="Bot Avatar">
+        </div>
+        <h1>Moderation Commands</h1>
+        <p>Keep your server safe and clean with these commands!</p>
+    </header>
+
+    <main>
+        <section class="command-list">
+            <h2>🛡️</h2>
+            <ul>
+                <li><strong>/kick [user]</strong> - Kicks a user from the server.</li>
+                <li><strong>/ban [user]</strong> - Bans a user from the server.</li>
+                <li><strong>/mute [user]</strong> - Mutes a user.</li>
+                <li><strong>/warn [user]</strong> - Warns a user.</li>
+                <li><strong>/clear [amount]</strong> - Clears a specified number of messages.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Fab#9384. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add smooth transitions when clicking links
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    const href = this.getAttribute('href');
+    
+                    // Add fade-out animation to the current page
+                    document.body.classList.add('fade-out');
+    
+                    // Wait for the animation to finish, then navigate to the new page
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300); // Match the duration of the fade-out animation
+                });
+            });
+        });
+    </script>
+</body>
+</html>

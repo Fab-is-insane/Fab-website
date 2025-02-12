@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Commands</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="avatar">
+            <img src="your-bot-avatar.gif" alt="Bot Avatar">
+        </div>
+        <h1>Fun Commands</h1>
+        <p>Spice up your server with these fun commands!</p>
+    </header>
+
+    <main>
+        <section class="command-list">
+            <h2>🎉</h2>
+            <ul>
+                <li><strong>-meme</strong> - Sends a random meme.</li>
+                <li><strong>-joke</strong> - Tells a random joke.</li>
+                <li><strong>-slap [user]</strong> - Slaps the [user] with random cartoon gifs.</li>
+                <li><strong>-gis [query]</strong> - Searches using the Google Image Search API.</li>
+                <li><strong>-roast</strong> - Roasts a user (all in good fun!).</li>
+                <li><strong>-ig [username]</strong> - Fetches the instagram using [username]</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Fab#9384. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add smooth transitions when clicking links
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    const href = this.getAttribute('href');
+    
+                    // Add fade-out animation to the current page
+                    document.body.classList.add('fade-out');
+    
+                    // Wait for the animation to finish, then navigate to the new page
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300); // Match the duration of the fade-out animation
+                });
+            });
+        });
+    </script>
+</body>
+</html>

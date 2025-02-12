@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fab - Discord Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="fade-in">
+    <header>
+        <div class="avatar">
+            <img src="your-bot-avatar.gif" alt="Bot Avatar">
+        </div>
+        <h1>Fab</h1>
+        <p>A general purpose discord bot with moderation, fun and music commands! <br> Custom server settings, leveling system and more to enhance your discord server!</p>
+    </header>
+
+    <main>
+        <section class="commands">
+            <h2>Command Categories</h2>
+            <div class="buttons">
+                <a href="music.html" class="btn">🎵 Music System</a>
+                <a href="moderation.html" class="btn">🛡️ Moderation</a>
+                <a href="fun.html" class="btn">🎉 Fun Commands</a>
+            </div>
+        </section>
+        <section class="invite">
+            <a href="https://discord.com/oauth2/authorize?client_id=759762948016177195&permissions=8&scope=bot" class="btn invite-btn" target="_blank">🤖 Invite now!</a>
+        <!-- Contact Button -->
+        <section class="contact">
+            <a href="https://discord.gg/AzarZsbkvC" class="btn contact-btn" target="_blank">💬 Join Support Server</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Fab#9384. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    if (!this.classList.contains('contact-btn')) {
+                        e.preventDefault();
+                        const href = this.getAttribute('href');
+                        document.body.classList.add('fade-out');
+                        setTimeout(() => {
+                            window.location.href = href;
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

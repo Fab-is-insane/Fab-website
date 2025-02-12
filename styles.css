@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('background-image.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: rgba(30, 30, 47, 0.6); /* Semi-transparent background for header */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+header .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #7289da;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #7289da;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
+
+main {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(30, 30, 47, 0.6); /* Semi-transparent background for main content */
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.commands h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #7289da;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    background-color: #7289da;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a6da8;
+}
+
+.command-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.command-list li {
+    background-color: rgba(114, 137, 218, 0.2); /* Semi-transparent box for commands */
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    border: 1px solid #7289da;
+    text-align: left;
+}
+
+.command-list li strong {
+    color: #7289da;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    background-color: rgba(30, 30, 47, 0.3); /* Semi-transparent background for footer */
+    padding: 1rem;
+    border-radius: 20px;
+}
+/* Page transition animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Fade-out animation */
+.fade-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* Contact Button */
+.contact {
+    margin-top: 2rem;
+}
+
+.contact-btn {
+    background-color: #57f287; /* Discord's green color */
+    color: #000000; /* Black text for contrast */
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #43b581; /* Darker green on hover */
+}
+/* Invite Bot Button */
+.invite {
+    margin-top: 2rem;
+}
+
+.invite-btn {
+    background-color: #5865f2; /* Discord's blurple color */
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.invite-btn:hover {
+    background-color: #4752c4; /* Darker blurple on hover */
+}
+
+/* Contact Button */
+.contact {
+    margin-top: 1rem;
+}

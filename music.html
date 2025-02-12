@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Commands</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="fade-in">
+    <header>
+        <div class="avatar">
+            <img src="your-bot-avatar.gif" alt="Bot Avatar">
+        </div>
+        <h1>Music Commands</h1>
+        <p>All the music commands your bot offers!</p>
+    </header>
+
+    <main>
+        <section class="command-list">
+            <h2>🎵</h2>
+            <ul>
+                <li><strong>/play [song]</strong> - Plays a song from YouTube.</li>
+                <li><strong>/pause</strong> - Pauses the current song.</li>
+                <li><strong>/resume</strong> - Resumes the paused song.</li>
+                <li><strong>/skip</strong> - Skips the current song.</li>
+                <li><strong>/stop</strong> - Stops the music and clears the queue.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Fab#9384. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
